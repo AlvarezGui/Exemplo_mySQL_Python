@@ -16,9 +16,9 @@ mycursor.execute("CREATE TABLE testeTabela (idTabela INT UNIQUE NOT NULL, nome V
 # adicionando valores à tabela
 sql = "INSERT INTO testeTabela (idTabela, nome) VALUES (%s, %s)"
 val = [
-        (11, "Games"),
-        (12, "Gomes"),
-        (13, "Mega Games")
+        (11, "Teste"),
+        (12, "Teste2"),
+        (13, "Teste3")
     ]
 mycursor.executemany(sql, val)
 cnx.commit()
